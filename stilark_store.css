@@ -1,0 +1,74 @@
+body{
+    margin: 0 auto;
+}
+
+.midtstilt {
+margin: 0 auto;
+text-align: center;
+}
+/* 
+    ---------------------
+    MENY: Se http://www.w3schools.com/html/html_lists.asp
+    ---------------------
+*/
+nav li {
+    float: left;
+}
+
+nav ul {
+    list-style-type: none; /* Fjerner kulepunkt (eller nummereringen dersom det hadde vært ol) */
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* http://www.w3schools.com/cssref/playit.asp?filename=playcss_overflow */
+    background-color: black;
+}
+
+nav li a{
+    display: block; 
+    color: white;
+    font-size: 120%;
+    text-align: center;
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px; 
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+}
+
+#logoMeny a{
+    display: block; 
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+nav li a:hover{
+    background-color: slategrey;
+}
+
+/* Avsluttet meny */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "Item1 Item2 Item3"
+        "Item4 Item5 Iten6";
+}
+
+.bilderMerch{
+    padding: 20px;
+    height: 200px;
+}
+
+#containerFooter{
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 30px;
+}

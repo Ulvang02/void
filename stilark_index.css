@@ -1,0 +1,144 @@
+body{
+    margin: 0 auto;
+}
+
+.midtstilt {
+margin: 0 auto;
+text-align: center;
+}
+/* 
+    ---------------------
+    MENY: Se http://www.w3schools.com/html/html_lists.asp
+    ---------------------
+*/
+nav li {
+    float: left;
+}
+
+nav ul {
+    list-style-type: none; /* Fjerner kulepunkt (eller nummereringen dersom det hadde vært ol) */
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* http://www.w3schools.com/cssref/playit.asp?filename=playcss_overflow */
+    background-color: black;
+}
+
+nav li a{
+    display: block; 
+    color: white;
+    font-size: 120%;
+    text-align: center;
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px; 
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+}
+
+#logoMeny a{
+    display: block; 
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+nav li a:hover{
+    background-color: slategrey;
+}
+
+/* Avsluttet meny */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.75fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "Roster Roster NesteMatch NesteMatch Tabell Tabell"
+        "Highlights Highlights Highlights merch merch merch";
+}
+
+.Highlights { grid-area: Highlights;  }
+
+.merch { grid-area: merch;
+    padding: 10px;
+}
+
+.Roster { grid-area: Roster;
+    border: solid black 0px;
+}
+
+.NesteMatch { grid-area: NesteMatch; 
+    border-left: solid black 1px;
+    border-right: solid black 1px;}
+
+.Tabell { grid-area: Tabell; }
+
+/*
+div{
+    border: solid black 2px;
+}
+*/  
+
+#merch-container-index{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas: 
+        "Item1 Item2"
+        "Item3 Item4";
+    border: none;
+}
+.Item1{ grid-area: Item1; }
+.Item2{ grid-area: Item2; }
+.Item3{ grid-area: Item3; }
+.Item4{ grid-area: Item4; }
+
+
+/*Roster*/
+.containerRosterElement{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.innholdRosterElement{
+    flex: 1;
+    background-color: white;
+    color: black;
+    padding: 10px;
+}
+/* Roster avsluttet*/
+
+.bilderMerch{
+    height: 100px;
+}
+
+#divNesteMatch{
+    padding-top: 30%;
+}
+
+#datoMatch{
+    font-size: 50px;
+    font-family: fantasy;
+}
+
+#tidspunktMatch{
+    font-size: 60px;
+    font-family: fantasy;
+}
+
+#containerFooter{
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    border: 1px solid black;
+    padding: 30px;
+}
+
+.rosterBilde{
+    border-radius: 50%;
+}
